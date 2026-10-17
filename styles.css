@@ -650,9 +650,9 @@ footer {
     }
 }
 
-/* CELULARES */
+/* MENÚ ADAPTABLE EN CELULARES Y PANTALLAS ESTRECHAS */
 
-@media (max-width: 620px) {
+@media (max-width: 760px) {
     .topline {
         font-size: 7px;
         padding: 0 4vw;
@@ -683,16 +683,17 @@ footer {
 
     .nav-links.open {
         display: flex;
-      }
+    }
 
-      .menu-toggle {
+    .menu-toggle {
         position: relative;
         z-index: 21;
-        min-width: 40px;
-        min-height: 40px;
+        display: block;
+        min-width: 44px;
+        min-height: 44px;
         color: var(--ink);
         touch-action: manipulation;
-      }
+    }
 
     .nav-cta {
         margin-left: auto;
