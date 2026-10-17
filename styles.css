@@ -669,7 +669,8 @@ footer {
     .nav-links {
         display: none;
         position: absolute;
-        top: 73px;
+        z-index: 20;
+        top: 100%;
         left: 0;
         right: 0;
         background: var(--paper);
@@ -682,7 +683,16 @@ footer {
 
     .nav-links.open {
         display: flex;
-    }
+      }
+
+      .menu-toggle {
+        position: relative;
+        z-index: 21;
+        min-width: 40px;
+        min-height: 40px;
+        color: var(--ink);
+        touch-action: manipulation;
+      }
 
     .nav-cta {
         margin-left: auto;
